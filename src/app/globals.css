@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330;
+  }
+  .mainBg {
+    @apply bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] 
+       bg-[size:40px_40px];
+  }
+
+  .secondaryBg {
+    @apply bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] 
+       bg-[size:40px_40px];
+  }
+  .mainColor {
+    @apply bg-sky-600 hover:bg-sky-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-sky-900/20 active:scale-95;
+  }
+}
+
+@layer utilities {
+  .headingGradient {
+    @apply bg-linear-to-r from-blue-400 to-blue-600;
+  }
+}
